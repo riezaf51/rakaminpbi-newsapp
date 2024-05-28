@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mandiri News</string>
+    <string name="top_headlines">Top Headlines</string>
+    <string name="all_news">All News</string>
+    <string name="search_news">Search News</string>
+
+    <!-- Placeholders -->
+    <string name="article_title_placeholder">Article Title</string>
+    <string name="article_description_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="article_author_placeholder">Author</string>
+    <string name="article_published_at_placeholder">21 October 2077</string>
+    <string name="error_placeholder">An error occurred</string>
+    <string name="back">Back</string>
+</resources>
