@@ -36,7 +36,7 @@ class ViewActivity : AppCompatActivity() {
         val article = intent.getParcelableExtra<Article>("article")
 
         article?.let{
-            binding.tvTitle.text = it.title
+            binding.tvTitle.text = it.title ?: "No Title"
             binding.tvAuthor.text = it.author ?: "Unknown"
             binding.tvPublishedAt.text = timestampFormatter.formatTimestamp(it.publishedAt)
             binding.tvDescription.text = it.description ?: "No Description"

@@ -49,7 +49,7 @@ class InfiniteScrollNewsAdapter : RecyclerView.Adapter<InfiniteScrollNewsAdapter
     inner class NewsViewHolder(private val binding: ItemArticleBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(article: Article) {
             binding.apply {
-                tvTitle.text = article.title
+                tvTitle.text = article.title ?: "No Title"
                 tvDescription.text = article.description ?: "No description"
                 tvAuthor.text = article.author ?: "Unknown"
                 tvPublishedAt.text = timestampFormatter.formatTimestamp(article.publishedAt)

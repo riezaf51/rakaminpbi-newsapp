@@ -5,11 +5,11 @@ import android.os.Parcelable
 
 data class Source(
     val id: String?,
-    val name: String
+    val name: String?
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
-        parcel.readString()!!
+        parcel.readString()
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
